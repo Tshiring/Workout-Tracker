@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tracker{
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.tracker,
+.tracker * {
+    font-family: sans-serif;
+}
+
+.tracker th{
+    font-size: 1.15em;
+    text-align: left;
+    font-weight: normal;
+    color: #fff;
+    background-color: aqua;
+}
+
+.tracker th,
+.tracker td{
+    padding: 0.75em;
+}
+
+.tracker__entries .tracker__row{
+    background-color: #eee;
+}
+
+.tracker__entries .tracker__row:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.tracker__date,
+.tracker__workout,
+.tracker__duration{
+    display: inline-block;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0.5em 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.tracker__duration{
+    width: 5em;
+    text-align: right;
+}
+
+.tracker__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: red;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.tracker__button:hover{
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.tracker__row--add{
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    background: #fff;
+}
+
+.tracker__row--add td{
+    text-align: right;
+}
+
+.tracker__add{
+    display: inline-block;
+    padding: 0.8em 1em;
+    color: green;
+    cursor: pointer;
+}
+
+.tracker__add:hover{
+    background: rgba(0, 0, 0, 0.1)
+}
